@@ -1,0 +1,91 @@
+/* pages/home/home.wxss */
+
+/* 功能一 轮播图 */
+
+/* 问题一:swiper高度不够 效果图390rpx */
+/* 问题2:image高度不够 效果图390rpx 宽度不够*/
+/* 移动项目：小程序 效果图390 写390rpx */
+/* 移动项目：vue 效果图390 写195px */
+
+.slide,.slide swiper,.slide image{
+  height: 390rpx;
+  width: 100%;
+}
+
+/*功能2 导航*/
+.index-nav{
+  display: flex;
+  flex-wrap: wrap;
+}
+.index-nav .nav-item{
+  width: 25%;
+  height: 200rpx;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction:column;
+  justify-content: center;
+  align-items: center;
+}
+
+.index-nav .nav-item image{
+  width: 80rpx;
+  height: 80rpx;
+}
+.index-nav .nav-item text{
+  padding-top:15rpx;
+  font-size: 14px;
+  color: #333;
+}
+
+/* 灰色分割快 */
+.divder{
+  border-bottom: 1px solid #ccc; 
+}
+
+/*商品*/
+.list{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:space-between;
+}
+.head{
+  font-size: 18px;
+  color: #333;
+  margin-top: 20rpx;
+  text-align: center;
+}
+.head .title{
+  margin-left: 100rpx;
+}
+.head .more{
+  font-size: 14px;
+  float: right;
+  margin-right: 40rpx;
+ 
+}
+.list .list-item{
+  display: flex;
+  box-sizing: border-box;
+  width: 50%;
+  color: #e33333;
+  flex-wrap: wrap;  
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  font-size: 16px;
+  
+}
+.list .list-item image{
+  height: 180rpx;
+  width: 180rpx;
+  margin-top: 20rpx;
+}
+.list .list-item .title{
+  color: #333;
+  font-size: 14px;
+  margin: 10rpx;
+}
+.f2{
+  border-top: 1rpx solid #ccc;
+  padding-top: 20rpx;
+}

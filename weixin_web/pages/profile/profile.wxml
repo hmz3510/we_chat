@@ -1,0 +1,33 @@
+<!--pages/profile/profile.wxml-->
+
+<!-- 需要使用 button 来授权登录 -->
+<view class="profile-me">
+  <view class="myselft">
+    <image mode="aspectFill" src="{{img}}" lazy-load></image>
+    <text>{{nickName}}</text>
+  </view>
+</view>
+<view class="divSilde"></view>
+<view class="order">
+  <view class="order-heade">
+    <text>商城订单</text>
+    <text class="all-order arrow">查看所有订单</text>
+  </view>
+</view>
+<view class="order-promise">
+  <view class="order-item" wx:for="{{imgList}}" wx:key="{{item.id}}">
+    <image src="{{item.img_url}}" lazy-load></image>
+    <text>{{item.title}}</text>
+  </view>
+</view>
+<view class="divSilde"></view>
+<view class="address">
+  <image src="http://192.168.199.233:4000/images/shop-tab/07.png" lazy-load></image>
+  <text>我的地址</text>
+  <text class="arrow address-arrow"></text>
+</view>
+<view class="address address-bottom">
+  <image src="http://192.168.199.233:4000/images/shop-tab/06.png" lazy-load></image>
+  <text>我的优惠券</text>
+  <text class="arrow address-arrow"></text>
+</view>

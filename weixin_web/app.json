@@ -1,0 +1,50 @@
+{
+  "pages": [
+    "pages/login/login",
+    "pages/cart/cart",
+    "pages/profile/profile",
+    "pages/home/home",
+    "pages/details/details",
+    "pages/list/list",
+    "pages/index/index"
+   
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#e33333",
+    "navigationBarTitleText": "小象商城",
+    "navigationBarTextStyle": "#fff"
+  },
+  "tabBar": {
+    "color": "#000000",
+    "selectedColor": "#f00",
+    "borderStyle": "#fff",
+    "position": "buttom",
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "text": "首页",
+        "iconPath": "pages/img/tabs/home_01.png",
+        "selectedIconPath": "pages/img/tabs/home_02.png"
+      },
+      {
+        "pagePath": "pages/list/list",
+        "text": "分类",
+        "iconPath": "pages/img/tabs/fenlei01.png",
+        "selectedIconPath": "pages/img/tabs/fenlei02.png"
+      },
+      {
+        "pagePath": "pages/cart/cart",
+        "text": "购物车",
+        "iconPath": "pages/img/tabs/shop_cart.png",
+        "selectedIconPath": "pages/img/tabs/shop_cart1.png"
+      },
+      {
+        "pagePath": "pages/profile/profile",
+        "text": "我的",
+        "iconPath": "pages/img/tabs/me01.png",
+        "selectedIconPath": "pages/img/tabs/me02.png"
+      }
+    ]
+  }
+}

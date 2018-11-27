@@ -1,0 +1,73 @@
+/* pages/list/list.wxss */
+.section{
+  width: 100%;
+  border: 1px solid #ccc;
+}
+.section input{
+  background-color: rgba(230, 230, 230, 0.884);
+  height: 60rpx;
+  text-align: center;
+  color: #333;
+  font-size: 14px;
+  border-radius: 40rpx;
+  width: 90%;
+  margin: 15rpx auto;
+}
+.nav{
+  background: rgba(230, 230, 230, 0.884);
+  width: 20%;
+  font-size: 12px;
+  color: #333;
+  float: left;
+  overflow: hidden;
+  height: 1200rpx;
+}
+.nav .nav-item{
+  text-align: center;
+  height: 65rpx;
+  line-height: 65rpx;
+}
+.nav-active{
+  background: #fff;
+  color: #F10215;
+}
+
+.nav-right{
+  position:absolute;
+  left:160rpx;
+  width: 100%;
+}
+.nav-content{
+  width: 77%;
+}
+.nav-content .title{
+  font-size: 14px;
+  margin: 30rpx 15rpx;
+  font-weight: bold;
+}
+
+.nav-content .nav-content-list{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  box-sizing: border-box;
+}
+.nav-content .nav-content-list .nav-list-item{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  align-content: center;
+  width: 33.33333%;
+  margin-bottom: 40rpx;
+  box-sizing: border-box;
+ 
+}
+.nav-content .nav-content-list .nav-list-item .nav-image{
+  width: 120rpx;
+  height: 120rpx;
+}
+.nav-content .nav-content-list .nav-list-item text{
+  font-size:12px;
+  margin-top: 20rpx; 
+  color: #000;
+}

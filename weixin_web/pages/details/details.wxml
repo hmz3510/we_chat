@@ -1,0 +1,48 @@
+<!--pages/details/details.wxml-->
+<view class="details" wx:for="{{product}}" wx:key="{{item.lid}}">
+  <view class="details-image" >
+    <image src="{{item.img}}" mode='aspectFill' lazy-load></image>
+  </view>
+  <view class="details-desc">
+    <text>{{item.title}}</text>
+  </view>
+  <view class="details-price">
+    <text class="price-now">￥{{item.price}}</text>
+    <text class="price-old">￥200</text>
+    <text class="sold">销量:  100个</text>
+  </view>
+</view>
+<view class="promise">
+  <view class="promise-item" wx:for="{{promise}}" wx:key="{{item.id}}">
+      <image src="http://192.168.199.233:4000/images/tab/81-Ok.png" lazy-load mode="aspectFill"></image>
+      <text>{{item}}</text>
+  </view>
+  
+</view>
+<view class="divSilde"></view>
+<view class="product_detail">
+  <view class="head">
+    <text class="title">商品详情</text>
+    <text class="took">评价</text>
+  </view>
+  <view class="bottom">
+    <view class="bottom-item" wx:for="{{picture}}" wx:key="{{item.laptop_id}}">
+      <image src="{{item.lg}}" lazy-load mode='widthFix'></image>
+    </view>
+    
+  </view>
+</view>
+<view class="shop-cart">
+  <view class="shop-home">
+    <image src="http://192.168.199.233:4000/images/tab/home_01.png" lazy-load mode='aspectFill'></image>
+    <text>首页</text>
+  </view>
+  <view class="shop-shou" bindtap='shouCang'>
+    <image src="http://192.168.199.233:4000/images/tab/foodstore_img3.png" lazy-load mode='aspectFill'></image>
+    <text>{{text}}</text>
+  </view>
+  <view class="buy">
+    <button class="addCart" bindtap='addCart'>加入购物车</button>
+    <button class="buy-right">立即购买</button>
+  </view>
+</view>

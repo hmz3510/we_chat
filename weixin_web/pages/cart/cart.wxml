@@ -1,0 +1,44 @@
+<!--pages/cart/cart.wxml-->
+<view class="cartshop-list">
+  <view class="cart-info" wx:if="{{list==0}}">
+    <image src="http://192.168.199.233:4000/images/shop-tab/购物车.png" lazy-load></image>
+    <text>你的购物车空空如也,去逛逛吧~~</text>
+  </view>
+  <view class="cart-list" wx:else>
+    <view class="cart-item" wx:for="{{list}}" wx:key="{{item.lid}}">
+      <view class="cart">
+      <view>
+        <image class="item-img"  data-lid="{{item.iid}}" data-index="{{index}}"  bindtap='selected' src="{{item.isselect?'http://192.168.199.233:4000/images/cart/select.png':'http://192.168.199.233:4000/images/cart/notselect.png'}}" mode='aspectFit' ></image>
+      </view> 
+        <view class="cart-right">
+          <image src="{{item.img}}" mode='aspectFit' lazy-load></image>
+          <view class="details">
+            <text class="title">{{item.title}}</text>
+            <text class="limit">限购50个</text>
+            <text class="price">￥{{item.price}}</text>
+          </view>
+
+          <view class="buy">
+          <button data-iid="{{item.iid}}" data-count="{{item.count}}" bindtap="delCart">-</button>
+          <input type="text" value='{{item.count}}'></input>
+          <button data-iid="{{item.iid}}" data-count="{{item.count}}" bindtap='addCart'>+</button>
+          </view>
+        </view>
+       
+      </view>
+    </view>
+    
+  </view>
+
+</view>
+<view class="silde"></view>
+<view class="cart-shop">
+<!-- <checkbox bindtap="allSelect"></checkbox> -->
+<image class="cart-shop-img"  bindtap='allSelect' src="{{allSelect?'http://192.168.199.233:4000/images/cart/select.png':'http://192.168.199.233:4000/images/cart/notselect.png'}}" ></image>
+  <text class="select-all">全选</text>
+  <text class="total">总计：</text>
+  <text class="total-price">￥{{totalPrice}}</text>
+  <button class="edit">编辑</button>
+  <button class="count">结算</button>
+</view>
+

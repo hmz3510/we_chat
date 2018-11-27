@@ -1,0 +1,11 @@
+<!--pages/login/login.wxml-->
+<view wx:if="{{canIUse}}">
+  <view class="header">
+    <image src="http://192.168.199.233:4000/images/user/user.jpg" lazy-load mode="aspectFill"></image>
+  </view>
+  <view class="content">
+    <view>小新申请获取以下权限</view>
+    <text>获得你的公开信息(昵称，头像等)</text>
+  </view>
+  <button class="bottom" type="primary" open-type='getUserInfo' lang='zh_CN' bindgetuserinfo='bindGetUserInfo'>授权登录</button>
+</view>

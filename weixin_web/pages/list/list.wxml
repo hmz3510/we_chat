@@ -1,0 +1,25 @@
+<!--pages/list/list.wxml-->
+<view class="section">
+  <input type="text" placeholder='搜索商品'></input>
+</view>
+<view class="nav">
+  <view class="nav-item {{item.fid==navContent[item.lid].pid? 'nav-active':''}}" wx:for="{{navList}}" wx:key="{{item.lid}}" data-id="{{item.fid}}" bindtap='change'>
+  <text data-id="{{item.fid}}">{{item.title}}</text>
+  </view> 
+</view>
+<view class="nav-right">
+  <view class="nav-content">
+    <view  class="title">
+      <text>热门搜索</text>
+    </view>
+    <view class="nav-content-list">
+      <view class="nav-list-item" wx:for='{{navContent}}' wx:key='{{item.pid}}'>
+        <image class="nav-image" src="{{item.img_url}}" mode='aspectFill' lazy-load></image>
+        <text>{{item.title}}</text>
+      </view>
+    </view>  
+  </view>
+</view>
+
+
+
